@@ -2,9 +2,9 @@ import React from 'react';
 
 
 const TopTrackList = (props) => {
-    const trackList = props.tracks.map(track => {
+    const trackList = props.tracks.map((track, index) => {
         return (
-            <div key={track.id.label}>{track.title.label}</div>
+        <div key={track.id.label}>{index+1} - {track.title.label}</div>
             )
         }
     )
